@@ -1,0 +1,135 @@
+<%
+KVerbs = File.read("KVerbFile")
+KAdverbs = File.read("KAdverbFile")
+KIOVerbs = File.read("KIOVerbFile")
+KReservedWords = File.read("KReservedWordFile")
+%>
+
+<html>
+    <head>
+        <title>
+            Kona Quick Dictionary
+        </title>
+        <style>
+        body {
+
+        }
+
+        .wordTypeContainer {
+            display: inline-block;
+        }
+
+        .wordCountContainer {
+            float: left;
+            display: block;
+            width: 25%;
+        }
+        </style>
+    </head>
+    <body>
+        <p>
+            This is just a nicely formatted screenscrape of the in-application help for Kona. Feel free to contribute to any sections though.
+        </p>
+        <div class="wordTypeContainer">
+            <h1>
+                Verbs
+            </h1>
+            <h2>
+                Basic Info
+            </h2>
+            <p>
+                <% kVerbLines = KVerbs.split(?\n) %>
+                <%=kVerbLines[0..3].join(". ") %>
+                <% kVerbLines = kVerbLines[4..-2] %>
+            </p>
+            <div class="wordCountContainer">
+                <h2>
+                    Monadic
+                </h2>
+                <%
+                kVerbLines.each do |verb|
+                    verb.match(/\A(.)\s(\w+)\s+(.+)\z/) do |verbData|
+                        if verbData.captures[1] == "monadic"
+                            %>
+                            <div>
+                            <%= verbData.captures[0] %>
+                            </div>
+                            <div>
+                            <%= verbData.captures[2] %>
+                            </div>
+                            <br/>
+                            <%
+                        end
+                    end
+                end
+                %>
+            </div>
+            <div class="wordCountContainer">
+                <h2>
+                    Dyadic
+                </h2>
+                <%
+                kVerbLines.each do |verb|
+                    verb.match(/\A(.)\s(\w+)\s+(.+)\z/) do |verbData|
+                        if verbData.captures[1] == "dyadic"
+                            %>
+                            <div>
+                            <%= verbData.captures[0] %>
+                            </div>
+                            <div>
+                            <%= verbData.captures[2] %>
+                            </div>
+                            <br/>
+                            <%
+                        end
+                    end
+                end
+                %>
+            </div>
+            <div class="wordCountContainer">
+                <h2>
+                    Triadic
+                </h2>
+                <%
+                kVerbLines.each do |verb|
+                    verb.match(/\A(.)\s(\w+)\s+(.+)\z/) do |verbData|
+                        if verbData.captures[1] == "triadic"
+                            %>
+                            <div>
+                            <%= verbData.captures[0] %>
+                            </div>
+                            <div>
+                            <%= verbData.captures[2] %>
+                            </div>
+                            <br/>
+                            <%
+                        end
+                    end
+                end
+                %>
+            </div>
+            <div class="wordCountContainer">
+                <h2>
+                    Tetradic
+                </h2>
+                <%
+                kVerbLines.each do |verb|
+                    verb.match(/\A(.)\s(\w+)\s+(.+)\z/) do |verbData|
+                        if verbData.captures[1] == "tetradic"
+                            %>
+                            <div>
+                            <%= verbData.captures[0] %>
+                            </div>
+                            <div>
+                            <%= verbData.captures[2] %>
+                            </div>
+                            <br/>
+                            <%
+                        end
+                    end
+                end
+                %>
+            </div>
+        </div>
+    </body>
+</html>

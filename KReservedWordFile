@@ -1,0 +1,74 @@
+Constants:
+(Note: the K epoch is 2035-01-01T00:00:00)
+_T       [current UTC Julian day count]+[fraction complete]
+_a       arguments
+_c       message source address
+_d       K-Tree path / current working dictionary
+_f       anonymous reference to current function
+_h       host name
+_i       index of current amendment
+_k       build date as string
+_n       nil
+_p       host port
+_s       space used allocated mmapped max
+_t       current UTC time (int)
+_v       current global variable under amendment
+_w       message source handle
+
+Monadic Verbs:
+_acos    inverse cosine
+_asin    inverse sine
+_atan    inverse tangent
+_ceil    ceiling (intolerant)
+_ceiling ceiling (tolerant)
+_cos     cosine
+_cosh    hyperbolic cosine
+_exp     exponential
+_floor   largest previous integer (intolerant)
+_log     natural logarithm
+_sin     sine
+_sinh    hyperbolic sine
+_sqr     square
+_sqrt    square root
+_tan     tangent
+_tanh    hyperbolic tangent
+_abs     absolute value
+_bd      convert to binary representation
+_ci      char-of-int (octal if unprintable char)
+_db      construct from binary representation
+_dj      date from Julian day count
+_exit    exit with status x
+_getenv  get an environment variable
+_gtime   in UTC, ints: YYYMMDD,HHMMSS (_gtime _t)
+_host    host name IP address (int)
+_ic      int-of-char
+_inv     inverse of a matrix
+_jd      Julian day count from date _jd 20110315
+_lt      convert output of _t to local time
+_ltime   localized version of _gtime
+_size    size of file (bytes)
+
+Dyadic Verbs:
+_bin     index of element using binary search
+_binl    search for several elements
+_di      delete element at index
+_dot     dot product
+_draw    draw x random numbers from 0 to y-1
+_dv      delete value
+_dvl     delete several values
+_hash    hash, (x;_hash x)?y
+_hat     caret/without, x _hat y
+_in      true if x is in y
+_lin     _in for several values
+_lsq     matrix division
+_mul     matrix multiplication
+_setenv  set environment variable
+_sm      string match
+_ss      positions of substring y in string x
+_sv      scalar from vector with base change
+_vs      vector from scalar with base change
+_vsx     vector from scalar with base change - extended
+
+Triadic Verbs:
+_ssr     string search & replace
+    
