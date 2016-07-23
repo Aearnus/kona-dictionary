@@ -25,6 +25,9 @@
         <p>
             This is just a nicely formatted screenscrape of the in-application help for Kona. Feel free to contribute to any sections though.
         </p>
+        <a style="display:block" href="https://github.com/aearnus/kona-dictionary">
+            Github page
+        </a>
         <div class="wordTypeContainer">
             <h1>
                 Verbs
@@ -612,88 +615,599 @@
             </div>
             <div class="wordCountContainer">
                 <h2>
-                    Scan monad
+                    Each Right
                 </h2>
                 
                             <div>
-                            \ 
+                            /:
                             </div>
                             <div>
-                            scan_monad
-                            </div>
-                            <div>
-                            trace until repeat   f\x    (1!)\1 2 3 4
+                            #:/:(2;2 2;2 2 2)    count each right
                             </div>
                             <br/>
                             
                             <div>
-                            \ 
+                            /:
                             </div>
                             <div>
-                            scan_monad
-                            </div>
-                            <div>
-                            trace n times      n f\x    10(|+\)\1 1
+                            2 #/: ("alpha";"bravo";"charlie")    take each right
                             </div>
                             <br/>
                             
             </div>
             <div class="wordCountContainer">
                 <h2>
-                    Scan monad
+                    Each Left
                 </h2>
                 
                             <div>
-                            \ 
+                            \:
                             </div>
                             <div>
-                            scan_monad
+                            eachleft
                             </div>
                             <div>
-                            trace until repeat   f\x    (1!)\1 2 3 4
-                            </div>
-                            <br/>
-                            
-                            <div>
-                            \ 
-                            </div>
-                            <div>
-                            scan_monad
-                            </div>
-                            <div>
-                            trace n times      n f\x    10(|+\)\1 1
+                            0 1 2 3 #\: "abc"     take each left
                             </div>
                             <br/>
                             
             </div>
             <div class="wordCountContainer">
                 <h2>
-                    Scan monad
+                    Each Pair
                 </h2>
                 
-                            <div>
-                            \ 
-                            </div>
-                            <div>
-                            scan_monad
-                            </div>
-                            <div>
-                            trace until repeat   f\x    (1!)\1 2 3 4
-                            </div>
-                            <br/>
-                            
-                            <div>
-                            \ 
-                            </div>
-                            <div>
-                            scan_monad
-                            </div>
-                            <div>
-                            trace n times      n f\x    10(|+\)\1 1
-                            </div>
-                            <br/>
-                            
             </div>
-
+        </div>
+        <div class="wordTypeContainer">
+            <h1>
+                Reserved Words
+            </h1>
+            
+            <div class="wordCountContainer">
+                <h2>
+                    Constants
+                </h2>
+                
+                        <div>
+                        _T
+                        </div>
+                        <div>
+                        [current UTC Julian day count]+[fraction complete]
+                        </div>
+                        <br/>
+                        
+                        <div>
+                        _a
+                        </div>
+                        <div>
+                        arguments
+                        </div>
+                        <br/>
+                        
+                        <div>
+                        _c
+                        </div>
+                        <div>
+                        message source address
+                        </div>
+                        <br/>
+                        
+                        <div>
+                        _d
+                        </div>
+                        <div>
+                        K-Tree path / current working dictionary
+                        </div>
+                        <br/>
+                        
+                        <div>
+                        _f
+                        </div>
+                        <div>
+                        anonymous reference to current function
+                        </div>
+                        <br/>
+                        
+                        <div>
+                        _h
+                        </div>
+                        <div>
+                        host name
+                        </div>
+                        <br/>
+                        
+                        <div>
+                        _i
+                        </div>
+                        <div>
+                        index of current amendment
+                        </div>
+                        <br/>
+                        
+                        <div>
+                        _k
+                        </div>
+                        <div>
+                        build date as string
+                        </div>
+                        <br/>
+                        
+                        <div>
+                        _n
+                        </div>
+                        <div>
+                        nil
+                        </div>
+                        <br/>
+                        
+                        <div>
+                        _p
+                        </div>
+                        <div>
+                        host port
+                        </div>
+                        <br/>
+                        
+                        <div>
+                        _s
+                        </div>
+                        <div>
+                        space used allocated mmapped max
+                        </div>
+                        <br/>
+                        
+                        <div>
+                        _t
+                        </div>
+                        <div>
+                        current UTC time (int)
+                        </div>
+                        <br/>
+                        
+                        <div>
+                        _v
+                        </div>
+                        <div>
+                        current global variable under amendment
+                        </div>
+                        <br/>
+                        
+                        <div>
+                        _w
+                        </div>
+                        <div>
+                        message source handle
+                        </div>
+                        <br/>
+                        
+            </div>
+            <div class="wordCountContainer">
+                <h2>
+                    Monads
+                </h2>
+                
+                        <div>
+                        _acos
+                        </div>
+                        <div>
+                        inverse cosine
+                        </div>
+                        <br/>
+                        
+                        <div>
+                        _asin
+                        </div>
+                        <div>
+                        inverse sine
+                        </div>
+                        <br/>
+                        
+                        <div>
+                        _atan
+                        </div>
+                        <div>
+                        inverse tangent
+                        </div>
+                        <br/>
+                        
+                        <div>
+                        _ceil
+                        </div>
+                        <div>
+                        ceiling (intolerant)
+                        </div>
+                        <br/>
+                        
+                        <div>
+                        _ceiling
+                        </div>
+                        <div>
+                        ceiling (tolerant)
+                        </div>
+                        <br/>
+                        
+                        <div>
+                        _cos
+                        </div>
+                        <div>
+                        cosine
+                        </div>
+                        <br/>
+                        
+                        <div>
+                        _cosh
+                        </div>
+                        <div>
+                        hyperbolic cosine
+                        </div>
+                        <br/>
+                        
+                        <div>
+                        _exp
+                        </div>
+                        <div>
+                        exponential
+                        </div>
+                        <br/>
+                        
+                        <div>
+                        _floor
+                        </div>
+                        <div>
+                        largest previous integer (intolerant)
+                        </div>
+                        <br/>
+                        
+                        <div>
+                        _log
+                        </div>
+                        <div>
+                        natural logarithm
+                        </div>
+                        <br/>
+                        
+                        <div>
+                        _sin
+                        </div>
+                        <div>
+                        sine
+                        </div>
+                        <br/>
+                        
+                        <div>
+                        _sinh
+                        </div>
+                        <div>
+                        hyperbolic sine
+                        </div>
+                        <br/>
+                        
+                        <div>
+                        _sqr
+                        </div>
+                        <div>
+                        square
+                        </div>
+                        <br/>
+                        
+                        <div>
+                        _sqrt
+                        </div>
+                        <div>
+                        square root
+                        </div>
+                        <br/>
+                        
+                        <div>
+                        _tan
+                        </div>
+                        <div>
+                        tangent
+                        </div>
+                        <br/>
+                        
+                        <div>
+                        _tanh
+                        </div>
+                        <div>
+                        hyperbolic tangent
+                        </div>
+                        <br/>
+                        
+                        <div>
+                        _abs
+                        </div>
+                        <div>
+                        absolute value
+                        </div>
+                        <br/>
+                        
+                        <div>
+                        _bd
+                        </div>
+                        <div>
+                        convert to binary representation
+                        </div>
+                        <br/>
+                        
+                        <div>
+                        _ci
+                        </div>
+                        <div>
+                        char-of-int (octal if unprintable char)
+                        </div>
+                        <br/>
+                        
+                        <div>
+                        _db
+                        </div>
+                        <div>
+                        construct from binary representation
+                        </div>
+                        <br/>
+                        
+                        <div>
+                        _dj
+                        </div>
+                        <div>
+                        date from Julian day count
+                        </div>
+                        <br/>
+                        
+                        <div>
+                        _exit
+                        </div>
+                        <div>
+                        exit with status x
+                        </div>
+                        <br/>
+                        
+                        <div>
+                        _getenv
+                        </div>
+                        <div>
+                        get an environment variable
+                        </div>
+                        <br/>
+                        
+                        <div>
+                        _gtime
+                        </div>
+                        <div>
+                        in UTC, ints: YYYMMDD,HHMMSS (_gtime _t)
+                        </div>
+                        <br/>
+                        
+                        <div>
+                        _host
+                        </div>
+                        <div>
+                        host name IP address (int)
+                        </div>
+                        <br/>
+                        
+                        <div>
+                        _ic
+                        </div>
+                        <div>
+                        int-of-char
+                        </div>
+                        <br/>
+                        
+                        <div>
+                        _inv
+                        </div>
+                        <div>
+                        inverse of a matrix
+                        </div>
+                        <br/>
+                        
+                        <div>
+                        _jd
+                        </div>
+                        <div>
+                        Julian day count from date _jd 20110315
+                        </div>
+                        <br/>
+                        
+                        <div>
+                        _lt
+                        </div>
+                        <div>
+                        convert output of _t to local time
+                        </div>
+                        <br/>
+                        
+                        <div>
+                        _ltime
+                        </div>
+                        <div>
+                        localized version of _gtime
+                        </div>
+                        <br/>
+                        
+                        <div>
+                        _size
+                        </div>
+                        <div>
+                        size of file (bytes)
+                        </div>
+                        <br/>
+                        
+            </div>
+            <div class="wordCountContainer">
+                <h2>
+                    Dyads
+                </h2>
+                
+                        <div>
+                        _bin
+                        </div>
+                        <div>
+                        index of element using binary search
+                        </div>
+                        <br/>
+                        
+                        <div>
+                        _binl
+                        </div>
+                        <div>
+                        search for several elements
+                        </div>
+                        <br/>
+                        
+                        <div>
+                        _di
+                        </div>
+                        <div>
+                        delete element at index
+                        </div>
+                        <br/>
+                        
+                        <div>
+                        _dot
+                        </div>
+                        <div>
+                        dot product
+                        </div>
+                        <br/>
+                        
+                        <div>
+                        _draw
+                        </div>
+                        <div>
+                        draw x random numbers from 0 to y-1
+                        </div>
+                        <br/>
+                        
+                        <div>
+                        _dv
+                        </div>
+                        <div>
+                        delete value
+                        </div>
+                        <br/>
+                        
+                        <div>
+                        _dvl
+                        </div>
+                        <div>
+                        delete several values
+                        </div>
+                        <br/>
+                        
+                        <div>
+                        _hash
+                        </div>
+                        <div>
+                        hash, (x;_hash x)?y
+                        </div>
+                        <br/>
+                        
+                        <div>
+                        _hat
+                        </div>
+                        <div>
+                        caret/without, x _hat y
+                        </div>
+                        <br/>
+                        
+                        <div>
+                        _in
+                        </div>
+                        <div>
+                        true if x is in y
+                        </div>
+                        <br/>
+                        
+                        <div>
+                        _lin
+                        </div>
+                        <div>
+                        _in for several values
+                        </div>
+                        <br/>
+                        
+                        <div>
+                        _lsq
+                        </div>
+                        <div>
+                        matrix division
+                        </div>
+                        <br/>
+                        
+                        <div>
+                        _mul
+                        </div>
+                        <div>
+                        matrix multiplication
+                        </div>
+                        <br/>
+                        
+                        <div>
+                        _setenv
+                        </div>
+                        <div>
+                        set environment variable
+                        </div>
+                        <br/>
+                        
+                        <div>
+                        _sm
+                        </div>
+                        <div>
+                        string match
+                        </div>
+                        <br/>
+                        
+                        <div>
+                        _ss
+                        </div>
+                        <div>
+                        positions of substring y in string x
+                        </div>
+                        <br/>
+                        
+                        <div>
+                        _sv
+                        </div>
+                        <div>
+                        scalar from vector with base change
+                        </div>
+                        <br/>
+                        
+                        <div>
+                        _vs
+                        </div>
+                        <div>
+                        vector from scalar with base change
+                        </div>
+                        <br/>
+                        
+                        <div>
+                        _vsx
+                        </div>
+                        <div>
+                        vector from scalar with base change - extended
+                        </div>
+                        <br/>
+                        
+            </div>
+            <div class="wordCountContainer">
+                <h2>
+                    Triad(s)
+                </h2>
+                
+                        <div>
+                        _ssr
+                        </div>
+                        <div>
+                        string search & replace
+                        </div>
+                        <br/>
+                        
+            </div>
+        </div>
     </body>
 </html>

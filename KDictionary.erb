@@ -415,6 +415,98 @@ KReservedWords = File.read("KReservedWordFile")
                 end
                 %>
             </div>
-
+        </div>
+        <div class="wordTypeContainer">
+            <h1>
+                Reserved Words
+            </h1>
+            <%
+            kReservedWordLines = KReservedWords.split(?\n)
+            kReservedConstants = kReservedWordLines[2..15]
+            kReservedMonads = kReservedWordLines[18..48]
+            kReservedDyads = kReservedWordLines[51..69]
+            kReservedTriads = kReservedWordLines[72..72]
+            %>
+            <div class="wordCountContainer">
+                <h2>
+                    Constants
+                </h2>
+                <%
+                kReservedConstants.each do |word|
+                    word.match(/\A(\w+)\s+(.+)/) do |wordData|
+                        %>
+                        <div>
+                        <%= wordData.captures[0] %>
+                        </div>
+                        <div>
+                        <%= wordData.captures[1] %>
+                        </div>
+                        <br/>
+                        <%
+                    end
+                end
+                %>
+            </div>
+            <div class="wordCountContainer">
+                <h2>
+                    Monads
+                </h2>
+                <%
+                kReservedMonads.each do |word|
+                    word.match(/\A(\w+)\s+(.+)/) do |wordData|
+                        %>
+                        <div>
+                        <%= wordData.captures[0] %>
+                        </div>
+                        <div>
+                        <%= wordData.captures[1] %>
+                        </div>
+                        <br/>
+                        <%
+                    end
+                end
+                %>
+            </div>
+            <div class="wordCountContainer">
+                <h2>
+                    Dyads
+                </h2>
+                <%
+                kReservedDyads.each do |word|
+                    word.match(/\A(\w+)\s+(.+)/) do |wordData|
+                        %>
+                        <div>
+                        <%= wordData.captures[0] %>
+                        </div>
+                        <div>
+                        <%= wordData.captures[1] %>
+                        </div>
+                        <br/>
+                        <%
+                    end
+                end
+                %>
+            </div>
+            <div class="wordCountContainer">
+                <h2>
+                    Triad(s)
+                </h2>
+                <%
+                kReservedTriads.each do |word|
+                    word.match(/\A(\w+)\s+(.+)/) do |wordData|
+                        %>
+                        <div>
+                        <%= wordData.captures[0] %>
+                        </div>
+                        <div>
+                        <%= wordData.captures[1] %>
+                        </div>
+                        <br/>
+                        <%
+                    end
+                end
+                %>
+            </div>
+        </div>
     </body>
 </html>
