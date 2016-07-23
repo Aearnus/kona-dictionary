@@ -152,18 +152,262 @@ KReservedWords = File.read("KReservedWordFile")
                 <%
                 kAdverbLines.each do |adverb|
                     adverb.match(/\A(.{1,2})\s{1,2}(\w+)\s+(.+)/) do |adverbData|
-                        %>
-                        <div>
-                        <%= adverbData.captures[0] %>
-                        </div>
-                        <div>
-                        <%= adverbData.captures[1] %>
-                        </div>
-                        <div>
-                        <%= adverbData.captures[2] %>
-                        </div>
-                        <br/>
-                    <%
+                        if adverbData.captures[1] == "over_dyad"
+                            %>
+                            <div>
+                            <%= adverbData.captures[0] %>
+                            </div>
+                            <div>
+                            <%= adverbData.captures[2] %>
+                            </div>
+                            <br/>
+                            <%
+                        end
+                    end
+                end
+                %>
+            </div>
+            <div class="wordCountContainer">
+                <h2>
+                    Scan dyad
+                </h2>
+                <%
+                kAdverbLines.each do |adverb|
+                    adverb.match(/\A(.{1,2})\s{1,2}(\w+)\s+(.+)/) do |adverbData|
+                        if adverbData.captures[1] == "scan_dyad"
+                            %>
+                            <div>
+                            <%= adverbData.captures[0] %>
+                            </div>
+                            <div>
+                            <%= adverbData.captures[2] %>
+                            </div>
+                            <br/>
+                            <%
+                        end
+                    end
+                end
+                %>
+            </div>
+            <div class="wordCountContainer">
+                <h2>
+                    Over monad
+                </h2>
+                <%
+                kAdverbLines.each do |adverb|
+                    adverb.match(/\A(.{1,2})\s{1,2}(\w+)\s+(.+)/) do |adverbData|
+                        if adverbData.captures[1] == "over_monad"
+                            %>
+                            <div>
+                            <%= adverbData.captures[0] %>
+                            </div>
+                            <div>
+                            <%= adverbData.captures[2] %>
+                            </div>
+                            <br/>
+                            <%
+                        end
+                    end
+                end
+                %>
+            </div>
+            <div class="wordCountContainer">
+                <h2>
+                    Scan monad
+                </h2>
+                <%
+                kAdverbLines.each do |adverb|
+                    adverb.match(/\A(.{1,2})\s{1,2}(\w+)\s+(.+)/) do |adverbData|
+                        if adverbData.captures[1] == "scan_monad"
+                            %>
+                            <div>
+                            <%= adverbData.captures[0] %>
+                            </div>
+                            <div>
+                            <%= adverbData.captures[2] %>
+                            </div>
+                            <br/>
+                            <%
+                        end
+                    end
+                end
+                %>
+            </div>
+            <div class="wordCountContainer">
+                <h2>
+                    Over
+                </h2>
+                <%
+                kAdverbLines.each do |adverb|
+                    adverb.match(/\A(.{1,2})\s{1,2}(\w+)\s+(.+)/) do |adverbData|
+                        if adverbData.captures[1] == "over"
+                            %>
+                            <div>
+                            <%= adverbData.captures[0] %>
+                            </div>
+                            <div>
+                            <%= adverbData.captures[2] %>
+                            </div>
+                            <br/>
+                            <%
+                        end
+                    end
+                end
+                %>
+            </div>
+            <div class="wordCountContainer">
+                <h2>
+                    Scan
+                </h2>
+                <%
+                kAdverbLines.each do |adverb|
+                    adverb.match(/\A(.{1,2})\s{1,2}(\w+)\s+(.+)/) do |adverbData|
+                        if adverbData.captures[1] == "scan"
+                            %>
+                            <div>
+                            <%= adverbData.captures[0] %>
+                            </div>
+                            <div>
+                            <%= adverbData.captures[2] %>
+                            </div>
+                            <br/>
+                            <%
+                        end
+                    end
+                end
+                %>
+            </div>
+            <div class="wordCountContainer">
+                <h2>
+                    Join
+                </h2>
+                <%
+                kAdverbLines.each do |adverb|
+                    adverb.match(/\A(.{1,2})\s{1,2}(\w+)\s+(.+)/) do |adverbData|
+                        if adverbData.captures[1] == "join"
+                            %>
+                            <div>
+                            <%= adverbData.captures[0] %>
+                            </div>
+                            <div>
+                            <%= adverbData.captures[2] %>
+                            </div>
+                            <br/>
+                            <%
+                        end
+                    end
+                end
+                %>
+            </div>
+            <div class="wordCountContainer">
+                <h2>
+                    Split
+                </h2>
+                <%
+                kAdverbLines.each do |adverb|
+                    adverb.match(/\A(.{1,2})\s{1,2}(\w+)\s+(.+)/) do |adverbData|
+                        if adverbData.captures[1] == "split"
+                            %>
+                            <div>
+                            <%= adverbData.captures[0] %>
+                            </div>
+                            <div>
+                            <%= adverbData.captures[2] %>
+                            </div>
+                            <br/>
+                            <%
+                        end
+                    end
+                end
+                %>
+            </div>
+            <div class="wordCountContainer">
+                <h2>
+                    Each
+                </h2>
+                <%
+                kAdverbLines.each do |adverb|
+                    adverb.match(/\A(.{1,2})\s{1,2}(\w+)\s+(.+)/) do |adverbData|
+                        if adverbData.captures[1] == "each"
+                            %>
+                            <div>
+                            <%= adverbData.captures[0] %>
+                            </div>
+                            <div>
+                            <%= adverbData.captures[2] %>
+                            </div>
+                            <br/>
+                            <%
+                        end
+                    end
+                end
+                %>
+            </div>
+            <div class="wordCountContainer">
+                <h2>
+                    Each Right
+                </h2>
+                <%
+                kAdverbLines.each do |adverb|
+                    adverb.match(/\A(.{1,2})\s{1,2}(\w+)\s+(.+)/) do |adverbData|
+                        if adverbData.captures[1] == "eachright"
+                            %>
+                            <div>
+                            <%= adverbData.captures[0] %>
+                            </div>
+                            <div>
+                            <%= adverbData.captures[2] %>
+                            </div>
+                            <br/>
+                            <%
+                        end
+                    end
+                end
+                %>
+            </div>
+            <div class="wordCountContainer">
+                <h2>
+                    Each Left
+                </h2>
+                <%
+                kAdverbLines.each do |adverb|
+                    adverb.match(/\A(.{1,2})\s{1,2}(\w+)\s+(.+)/) do |adverbData|
+                        if adverbData.captures[1] == "eachleft"
+                            %>
+                            <div>
+                            <%= adverbData.captures[0] %>
+                            </div>
+                            <div>
+                            <%= adverbData.captures[1] %>
+                            </div>
+                            <div>
+                            <%= adverbData.captures[2] %>
+                            </div>
+                            <br/>
+                            <%
+                        end
+                    end
+                end
+                %>
+            </div>
+            <div class="wordCountContainer">
+                <h2>
+                    Each Pair
+                </h2>
+                <%
+                kAdverbLines.each do |adverb|
+                    adverb.match(/\A(.{1,2})\s{1,2}(\w+)\s+(.+)/) do |adverbData|
+                        if adverbData.captures[1] == "eachpair"
+                            %>
+                            <div>
+                            <%= adverbData.captures[0] %>
+                            </div>
+                            <div>
+                            <%= adverbData.captures[2] %>
+                            </div>
+                            <br/>
+                            <%
+                        end
                     end
                 end
                 %>
