@@ -146,20 +146,24 @@ KReservedWords = File.read("KReservedWordFile")
                 <% kAdverbLines = kAdverbLines[4..-2] %>
             </p>
             <div class="wordCountContainer">
+                <h2>
+                    Over dyad
+                </h2>
                 <%
-                kAdverbLines.each do |verb|
-                    verb.match(/\A(.)\s(\w+)\s+(.+)\z/) do |verbData|
-                        if verbData.captures[1] == "monadic"
-                            %>
-                            <div>
-                            <%= verbData.captures[0] %>
-                            </div>
-                            <div>
-                            <%= verbData.captures[2] %>
-                            </div>
-                            <br/>
-                            <%
-                        end
+                kAdverbLines.each do |adverb|
+                    adverb.match(/\A(.{1,2})\s{1,2}(\w+)\s+(.+)/) do |adverbData|
+                        %>
+                        <div>
+                        <%= adverbData.captures[0] %>
+                        </div>
+                        <div>
+                        <%= adverbData.captures[1] %>
+                        </div>
+                        <div>
+                        <%= adverbData.captures[2] %>
+                        </div>
+                        <br/>
+                    <%
                     end
                 end
                 %>
